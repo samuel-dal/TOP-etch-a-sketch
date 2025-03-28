@@ -2,20 +2,36 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TOP Etch a Sketch</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Etch a Sketch</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="wrapper">
-		<div class="buttons">
-			<button class="start" onclick="toggleButton()">Sketch Now</button>
-			<button class="reset" onclick="">Reset</button>
-		</div>
-		<div class="container">
-		</div>
-	</div>
+		<div class="wrapper">
+			<div class="main-container">
+				<div class="tools">
+					<div>
+						<input class="color" type="color" value="#2C3930" name="color">
+					</div>
+					<div class="random-color">
+						<button name="random">Random</button>
+					</div>
+					<div class="erase">
+						<button name="erase">Erase</button>
+					</div>
+					<div class="reset">
+						<button name="reset">Reset</button>	
+					</div>
+					<div class="grids-counts">
+						<input type="range" class="range-input" name="range-input" min="1" max="100" value="16" />
+						<span class="grid-label">16x16</span>
+					</div>
+				</div>
+				<div class="sketch-container">
 
+				</div>
+			</div>
+		</div>
 	<script src="script.js"></script>
 </body>
 </html>
