@@ -7,13 +7,13 @@ const toolsChildren = document.querySelectorAll('.tools div *');
 
 const createGrids = () => {
   sketchContainer.innerHTML = '';
-  gridLabel.textContent = `${rangeValue.value}x${rangeValue.value}`;
   const numberOfGridsRow = rangeValue.value;
-  const heightOfGrids = (sketchContainer.clientHeight / (numberOfGridsRow)) - 2;
+  const sketchContainerHeight = 560;
+  const heightOfGrids = (sketchContainerHeight / (numberOfGridsRow));
   const numberOfGridsRowSquared = numberOfGridsRow ** 2;
 
-  sketchContainer.style.width = `${sketchContainer.clientHeight}px`;
-  sketchContainer.style.height = `${sketchContainer.clientHeight}px`;
+  sketchContainer.style.width = `${sketchContainerHeight}px`;
+  sketchContainer.style.height = `${sketchContainerHeight}px`;
 
   const fragment = new DocumentFragment();
 
